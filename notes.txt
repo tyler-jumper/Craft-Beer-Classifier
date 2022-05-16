@@ -1,0 +1,13 @@
+Work on next
+- Eventually down the road introduce SRM as another feature
+- split the types of beers up into the 10 categories
+    - probably do a style.contains() and then if it contains IPA then it's an IPA rather 
+    than all the weird styles of IPAs
+- I could potentially give this data to the other (castone) program and see if it cleans it
+
+ALSO
+- should I just do straight up nlp using only the description to see if the model can guess the beer type?
+- It would be cool to put all this on Kaggle but I think before I do that I would want to get the full description
+
+What we need to find
+- We will implement SRM later 
