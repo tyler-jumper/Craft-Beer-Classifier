@@ -1,13 +1,19 @@
 Work on next
-- Eventually down the road introduce SRM as another feature
 - split the types of beers up into the 10 categories
-    - probably do a style.contains() and then if it contains IPA then it's an IPA rather 
-    than all the weird styles of IPAs
-- I could potentially give this data to the other (castone) program and see if it cleans it
+	- Categories aren't acting as expected kind of. There are a ton of IPAs (expected) but VERY few of every other Beer
+	- need to look into  this more
+ 
+- I created a Naieve Bays model for the NLP part (used the DS5k nlp notebook as a guide)
+	- I started with just determining if a beer is an IPA or not 
+	- There were 218 IPAs and I got all the Stouts, Sours, Pale Ales, and Lagers as the 'non_IPAs' (there were about 222)
+	- Removed stopwords, non alphanumeric chars, made all  words lowercase, and stemmed all words
+	- the accuracy is 88% from a baseline of 48%
+
 
 ALSO
 - should I just do straight up nlp using only the description to see if the model can guess the beer type?
 - It would be cool to put all this on Kaggle but I think before I do that I would want to get the full description
 
 What we need to find
-- We will implement SRM later 
+- I need to get more of all the other kinds of beers
+- and eventually figure out how to do nlp model with multiple outcomes (IPA, Pale ale, Brown Ale, etc) rather than just is it an IPA yes or no
